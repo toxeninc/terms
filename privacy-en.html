@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Privacy Policy: what data this app handles, where it is stored, and which public third-party services it contacts.">
+<meta name="color-scheme" content="light dark">
+<title>Privacy Policy</title>
+<style>
+  /* 颜色取自应用主题 lib/theme/beacon_theme.dart（BeaconColors.light / dark） */
+  :root {
+    --bg: #F3F0E8;
+    --surface: #FBFAF6;
+    --surface-2: #E9E5DA;
+    --ink: #16150F;
+    --ink-2: rgba(22, 21, 15, .6);
+    --ink-3: rgba(22, 21, 15, .34);
+    --rule: rgba(22, 21, 15, .11);
+    --rule-2: rgba(22, 21, 15, .22);
+    --sig: #F29A2E;
+    --sig-text: #B0600A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0B0E13;
+      --surface: #12161D;
+      --surface-2: #1B2029;
+      --ink: #EDE8DD;
+      --ink-2: rgba(237, 232, 221, .6);
+      --ink-3: rgba(237, 232, 221, .32);
+      --rule: rgba(237, 232, 221, .09);
+      --rule-2: rgba(237, 232, 221, .18);
+      --sig: #FFB04A;
+      --sig-text: #FFB04A;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: max(40px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(56px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
+  }
+  header { margin-bottom: 28px; }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+  }
+  .eyebrow::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--sig);
+  }
+  h1 { margin: 10px 0 12px; font-size: 32px; line-height: 1.25; font-weight: 700; letter-spacing: -.01em; }
+  .lead { margin: 0; color: var(--ink-2); }
+  .summary {
+    margin: 0 0 28px;
+    padding: 18px 20px;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 16px;
+  }
+  .summary h2 { margin: 0 0 8px; font-size: 15px; color: var(--sig-text); }
+  .summary ul { margin: 0; padding-left: 1.2em; }
+  .summary li + li { margin-top: 4px; }
+  nav {
+    margin: 0 0 36px;
+    padding: 16px 20px;
+    border: 1px solid var(--rule);
+    border-radius: 16px;
+  }
+  nav h2 { margin: 0 0 8px; font-size: 13px; letter-spacing: .08em; color: var(--ink-3); font-weight: 600; }
+  nav ol { margin: 0; padding-left: 1.4em; }
+  nav a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule-2); }
+  nav a:hover { color: var(--sig-text); border-color: var(--sig-text); }
+  section { padding-top: 8px; margin-bottom: 28px; scroll-margin-top: 16px; }
+  section h2 {
+    margin: 0 0 10px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    line-height: 1.4;
+    border-bottom: 1px solid var(--rule);
+  }
+  h3 { margin: 18px 0 6px; font-size: 16px; }
+  p { margin: 0 0 12px; }
+  ul.list { margin: 0 0 12px; padding-left: 1.2em; }
+  ul.list li + li { margin-top: 6px; }
+  .host { color: var(--ink-2); font-size: 14px; word-break: break-all; }
+  strong { font-weight: 600; }
+  a { color: var(--sig-text); }
+  footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+    font-size: 14px;
+    color: var(--ink-2);
+  }
+  @media (max-width: 480px) {
+    body { font-size: 15px; }
+    h1 { font-size: 26px; }
+    section h2 { font-size: 18px; }
+  }
+  @media print {
+    :root {
+      --bg: #fff; --surface: #fff; --surface-2: #fff;
+      --ink: #000; --ink-2: #333; --ink-3: #555;
+      --rule: #ccc; --rule-2: #999; --sig: #000; --sig-text: #000;
+    }
+    body { font-size: 11pt; }
+    .page { max-width: none; padding: 0; }
+    nav, .eyebrow::before { display: none; }
+    .summary { border-radius: 0; }
+    section { break-inside: avoid-page; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <span class="eyebrow">Privacy Policy</span>
+    <h1>Privacy Policy</h1>
+    <p class="lead">This app is a network diagnostics and security self-check tool. We do not run our own servers and there are no user accounts. This policy explains what data the app handles, where that data is stored, and which public third-party services the app contacts to provide its features.</p>
+  </header>
+
+  <aside class="summary" aria-label="Summary">
+    <h2>At a glance</h2>
+    <ul>
+      <li>Your test history, device list and preferences are stored only on your device and are never uploaded.</li>
+      <li>We do not share personal information, and the app contains no advertising or analytics SDKs.</li>
+      <li>Some features connect directly to public third-party services, which can see your public IP address.</li>
+      <li>The service is intended only for users who are at least 18 years old.</li>
+    </ul>
+  </aside>
+
+  <nav aria-label="Contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#local">Data stored only on your device</a></li>
+      <li><a href="#third-party">Data sent to public third-party services</a></li>
+      <li><a href="#lan">Local network probing</a></li>
+      <li><a href="#permissions">System permissions</a></li>
+      <li><a href="#feedback">Feedback</a></li>
+      <li><a href="#sharing">Information sharing</a></li>
+      <li><a href="#rights">Your choices and controls</a></li>
+      <li><a href="#minors">Minors</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+    </ol>
+  </nav>
+
+  <section id="local">
+    <h2>Data stored only on your device</h2>
+    <p>The following data stays on your device and is never uploaded to any server:</p>
+    <ul class="list">
+      <li>Speed test records and history;</li>
+      <li>Local network scan results, along with the names and trusted labels you assign to devices;</li>
+      <li>Results of network checkups, port checks, site checks and similar tests;</li>
+      <li>In-app notifications, appearance and other preferences;</li>
+      <li>Email addresses you choose to monitor for data breaches.</li>
+    </ul>
+    <p>You can erase this data at any time under &ldquo;Me &rsaquo; Clear Local Data&rdquo;. Deleting the app also removes it.</p>
+  </section>
+
+  <section id="third-party">
+    <h2>Data sent to public third-party services</h2>
+    <p>To provide certain features, the app connects directly from your device to the public services listed below. As with visiting any website, these services can see your public IP address.</p>
+    <h3>Speed test</h3>
+    <p>Connects to the Cloudflare speed test service and LibreSpeed community servers. Only random data is uploaded and downloaded.<br><span class="host">speed.cloudflare.com, librespeed.org and the community servers it lists</span></p>
+    <h3>Public IP and location lookup</h3>
+    <p>Used to determine your public IP address and its approximate location.<br><span class="host">ipwho.is, ipinfo.io, api.ip.sb, api6.ipify.org</span></p>
+    <h3>Multi-region site check</h3>
+    <p>Tests a website&rsquo;s availability from several regions. The service receives the domain name you enter.<br><span class="host">api.globalping.io</span></p>
+    <h3>Email breach lookup</h3>
+    <p>Checks whether an email address appears in publicly known data breaches. The service receives the email address you enter or monitor.<br><span class="host">api.xposedornot.com</span></p>
+    <h3>Latency measurement and security checks</h3>
+    <p>Home-screen latency measurement and network security checks contact public DNS servers and common public websites. These requests carry no personal information.<br><span class="host">223.5.5.5, captive.apple.com, apple.com, cloudflare.com, baidu.com and similar</span></p>
+    <h3>Version check</h3>
+    <p>The About screen asks the App Store for the latest version number. The request includes only the app&rsquo;s identifier.<br><span class="host">itunes.apple.com</span></p>
+    <p>How these services handle the requests they receive is governed by their own privacy policies.</p>
+  </section>
+
+  <section id="lan">
+    <h2>Local network probing</h2>
+    <p>Device scanning, port checks and the Wi-Fi checkup send ping, mDNS, SSDP, NetBIOS and TCP connection requests to devices on the local network you are connected to, in order to discover devices and identify open ports. The results are stored only on your device.</p>
+    <p>Please use these features only on networks you own or are authorized to test.</p>
+  </section>
+
+  <section id="permissions">
+    <h2>System permissions</h2>
+    <ul class="list">
+      <li><strong>Local Network:</strong> required to scan devices on your local network and check your gateway.</li>
+      <li><strong>Photos:</strong> used only when you attach screenshots to feedback, and only to read the images you select.</li>
+    </ul>
+    <p>The app does not request access to your location, contacts, microphone or camera, and does not request permission to track you across apps. You can revoke any granted permission in system settings at any time; the related features will then stop working.</p>
+  </section>
+
+  <section id="feedback">
+    <h2>Feedback</h2>
+    <p>Feedback is sent through the system share sheet or your mail app; you decide who receives it and how. If you choose to include diagnostic information, the app version, system version and current connection type are attached.</p>
+  </section>
+
+  <section id="sharing">
+    <h2>Information sharing</h2>
+    <p>We do not share personal information. Apart from the requests the app sends directly to the public services described above when you use the corresponding features, we do not provide your data to any third party. The app contains no advertising or analytics SDKs.</p>
+  </section>
+
+  <section id="rights">
+    <h2>Your choices and controls</h2>
+    <ul class="list">
+      <li>If you do not use a feature, the related third-party requests are never made;</li>
+      <li>You can clear local data or delete the app at any time;</li>
+      <li>You can revoke granted permissions in system settings at any time;</li>
+      <li>You can stop breach monitoring for any email address at any time.</li>
+    </ul>
+  </section>
+
+  <section id="minors">
+    <h2>Minors</h2>
+    <p>The service is intended only for users who are at least 18 years old. Anyone under 18 years of age must not download, install, access or use the service.</p>
+  </section>
+
+  <section id="changes">
+    <h2>Changes to this policy</h2>
+    <p>This policy may be updated as features change, and updated versions are released together with new versions of the app. If a change materially affects how data is handled, we will let you know within the app.</p>
+  </section>
+
+  <footer>
+    <p>See also: <a href="terms-en.html">Terms of Use</a></p>
+  </footer>
+</main>
+</body>
+</html>

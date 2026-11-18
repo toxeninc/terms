@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Terms of Use: age requirement, lawful use, the nature of test results, third-party services and data charges for this app.">
+<meta name="color-scheme" content="light dark">
+<title>Terms of Use</title>
+<style>
+  /* 颜色取自应用主题 lib/theme/beacon_theme.dart（BeaconColors.light / dark） */
+  :root {
+    --bg: #F3F0E8;
+    --surface: #FBFAF6;
+    --surface-2: #E9E5DA;
+    --ink: #16150F;
+    --ink-2: rgba(22, 21, 15, .6);
+    --ink-3: rgba(22, 21, 15, .34);
+    --rule: rgba(22, 21, 15, .11);
+    --rule-2: rgba(22, 21, 15, .22);
+    --sig: #F29A2E;
+    --sig-text: #B0600A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0B0E13;
+      --surface: #12161D;
+      --surface-2: #1B2029;
+      --ink: #EDE8DD;
+      --ink-2: rgba(237, 232, 221, .6);
+      --ink-3: rgba(237, 232, 221, .32);
+      --rule: rgba(237, 232, 221, .09);
+      --rule-2: rgba(237, 232, 221, .18);
+      --sig: #FFB04A;
+      --sig-text: #FFB04A;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: max(40px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(56px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
+  }
+  header { margin-bottom: 28px; }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+  }
+  .eyebrow::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--sig);
+  }
+  h1 { margin: 10px 0 12px; font-size: 32px; line-height: 1.25; font-weight: 700; letter-spacing: -.01em; }
+  .lead { margin: 0; color: var(--ink-2); }
+  .summary {
+    margin: 0 0 28px;
+    padding: 18px 20px;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 16px;
+  }
+  .summary h2 { margin: 0 0 8px; font-size: 15px; color: var(--sig-text); }
+  .summary ul { margin: 0; padding-left: 1.2em; }
+  .summary li + li { margin-top: 4px; }
+  nav {
+    margin: 0 0 36px;
+    padding: 16px 20px;
+    border: 1px solid var(--rule);
+    border-radius: 16px;
+  }
+  nav h2 { margin: 0 0 8px; font-size: 13px; letter-spacing: .08em; color: var(--ink-3); font-weight: 600; }
+  nav ol { margin: 0; padding-left: 1.4em; }
+  nav a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule-2); }
+  nav a:hover { color: var(--sig-text); border-color: var(--sig-text); }
+  section { padding-top: 8px; margin-bottom: 28px; scroll-margin-top: 16px; }
+  section h2 {
+    margin: 0 0 10px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    line-height: 1.4;
+    border-bottom: 1px solid var(--rule);
+  }
+  h3 { margin: 18px 0 6px; font-size: 16px; }
+  p { margin: 0 0 12px; }
+  ul.list { margin: 0 0 12px; padding-left: 1.2em; }
+  ul.list li + li { margin-top: 6px; }
+  .host { color: var(--ink-2); font-size: 14px; word-break: break-all; }
+  strong { font-weight: 600; }
+  a { color: var(--sig-text); }
+  footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+    font-size: 14px;
+    color: var(--ink-2);
+  }
+  @media (max-width: 480px) {
+    body { font-size: 15px; }
+    h1 { font-size: 26px; }
+    section h2 { font-size: 18px; }
+  }
+  @media print {
+    :root {
+      --bg: #fff; --surface: #fff; --surface-2: #fff;
+      --ink: #000; --ink-2: #333; --ink-3: #555;
+      --rule: #ccc; --rule-2: #999; --sig: #000; --sig-text: #000;
+    }
+    body { font-size: 11pt; }
+    .page { max-width: none; padding: 0; }
+    nav, .eyebrow::before { display: none; }
+    .summary { border-radius: 0; }
+    section { break-inside: avoid-page; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <span class="eyebrow">Terms of Use</span>
+    <h1>Terms of Use</h1>
+    <p class="lead">This app is a network diagnostics and security self-check tool. By downloading, installing or using the app, you confirm that you have read and agree to these terms. If you do not agree, please stop using the app.</p>
+  </header>
+
+  <aside class="summary" aria-label="Summary">
+    <h2>At a glance</h2>
+    <ul>
+      <li>The service is intended only for users who are at least 18 years old.</li>
+      <li>Illegal use is prohibited: you must not use the app for any illegal, criminal or infringing activity, or any other activity prohibited by law.</li>
+      <li>Scanning and probing features may be used only on networks and devices you own or are authorized to test.</li>
+      <li>Test results are for reference only and do not constitute professional advice.</li>
+    </ul>
+  </aside>
+
+  <nav aria-label="Contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#eligibility">Eligibility</a></li>
+      <li><a href="#service">The service</a></li>
+      <li><a href="#acceptable-use">Lawful use</a></li>
+      <li><a href="#results">Results are for reference only</a></li>
+      <li><a href="#third-party">Third-party services</a></li>
+      <li><a href="#data-usage">Data usage and charges</a></li>
+      <li><a href="#ip">Intellectual property</a></li>
+      <li><a href="#termination">Suspension and termination</a></li>
+      <li><a href="#changes">Changes to these terms</a></li>
+    </ol>
+  </nav>
+
+  <section id="eligibility">
+    <h2>Eligibility</h2>
+    <p>The service is intended only for users who are at least 18 years old. Anyone under 18 years of age must not download, install, access or use the service. By using the service, you confirm that you are at least 18 years old and have the legal capacity to accept these terms.</p>
+  </section>
+
+  <section id="service">
+    <h2>The service</h2>
+    <p>The app provides network diagnostics and security self-check features, including speed tests, public IP and location lookup, local network device scanning, port checks, a Wi-Fi checkup, DNS and route tracing, website availability checks, email breach lookup and password generation. The exact scope of each feature depends on the current version of the app, and we may adjust, add or retire features as needed.</p>
+  </section>
+
+  <section id="acceptable-use">
+    <h2>Lawful use</h2>
+    <p>You must comply with the applicable local laws and regulations of the place where you are located, the place where you use the service, and any jurisdiction that applies to the relevant services, and you are responsible for your own use of the app.</p>
+    <p>Illegal use is prohibited. You must not use the app for any illegal, criminal or infringing activity, or any other activity prohibited by law, including but not limited to:</p>
+    <ul class="list">
+      <li>Scanning, probing or testing networks, devices or services owned or managed by others without permission;</li>
+      <li>Using test results to intrude into, attack, disrupt or damage any system;</li>
+      <li>Looking up, collecting or exploiting other people&rsquo;s email addresses or related information in a way that infringes their privacy or other legitimate rights;</li>
+      <li>Abusing, through automation or otherwise, the third-party services the app relies on, or interfering with their normal operation;</li>
+      <li>Reverse engineering or cracking the app, or using it for any other purpose that violates laws or regulations.</li>
+    </ul>
+    <p>Device scanning, port checks and similar features should be used only on networks and devices that you own or are expressly authorized to test. You are solely responsible for any consequences arising from a breach of these terms or of applicable laws.</p>
+  </section>
+
+  <section id="results">
+    <h2>Results are for reference only</h2>
+    <p>Speed, location, device identification, breach lookup and security check results are affected by network conditions, third-party data sources, system restrictions and other factors, and may be inaccurate or incomplete. The security score is an indicative value based on a limited set of checks and does not mean your network is free of other risks.</p>
+    <p>These results do not constitute professional security, legal or technical advice. Please do not rely on them as the sole basis for any decision.</p>
+  </section>
+
+  <section id="third-party">
+    <h2>Third-party services</h2>
+    <p>Some features rely on public third-party services, as described in the <a href="privacy-en.html">Privacy Policy</a>. These services are operated by their respective providers and may change, be rate-limited or be discontinued, in which case the related features may become temporarily or permanently unavailable. Your use of third-party services is also subject to their own terms.</p>
+  </section>
+
+  <section id="data-usage">
+    <h2>Data usage and charges</h2>
+    <p>Speed tests upload and download real data. Any data charges incurred while using the app over a cellular network are your responsibility with your carrier.</p>
+  </section>
+
+  <section id="ip">
+    <h2>Intellectual property</h2>
+    <p>The app&rsquo;s interface design, graphics, text and program code are protected by applicable law. Except as permitted by law or otherwise authorized, you may not copy, modify, distribute or otherwise exploit this content.</p>
+  </section>
+
+  <section id="termination">
+    <h2>Suspension and termination</h2>
+    <p>If you breach these terms or applicable laws, we may restrict or terminate your use of the service. You may stop using the service and delete the app at any time.</p>
+  </section>
+
+  <section id="changes">
+    <h2>Changes to these terms</h2>
+    <p>These terms may be updated as features change, and updated versions are released together with new versions of the app. Continuing to use the app after a change means you accept the updated terms.</p>
+  </section>
+
+  <footer>
+    <p>See also: <a href="privacy-en.html">Privacy Policy</a></p>
+  </footer>
+</main>
+</body>
+</html>

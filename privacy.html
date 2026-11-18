@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="隐私政策：说明本应用会接触哪些数据、这些数据保存在哪里，以及会发送给哪些第三方公共服务。">
+<meta name="color-scheme" content="light dark">
+<title>隐私政策</title>
+<style>
+  /* 颜色取自应用主题 lib/theme/beacon_theme.dart（BeaconColors.light / dark） */
+  :root {
+    --bg: #F3F0E8;
+    --surface: #FBFAF6;
+    --surface-2: #E9E5DA;
+    --ink: #16150F;
+    --ink-2: rgba(22, 21, 15, .6);
+    --ink-3: rgba(22, 21, 15, .34);
+    --rule: rgba(22, 21, 15, .11);
+    --rule-2: rgba(22, 21, 15, .22);
+    --sig: #F29A2E;
+    --sig-text: #B0600A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0B0E13;
+      --surface: #12161D;
+      --surface-2: #1B2029;
+      --ink: #EDE8DD;
+      --ink-2: rgba(237, 232, 221, .6);
+      --ink-3: rgba(237, 232, 221, .32);
+      --rule: rgba(237, 232, 221, .09);
+      --rule-2: rgba(237, 232, 221, .18);
+      --sig: #FFB04A;
+      --sig-text: #FFB04A;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", "Microsoft YaHei", sans-serif;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: max(40px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(56px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
+  }
+  header { margin-bottom: 28px; }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    letter-spacing: .08em;
+    color: var(--ink-2);
+  }
+  .eyebrow::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--sig);
+  }
+  h1 { margin: 10px 0 12px; font-size: 32px; line-height: 1.25; font-weight: 700; letter-spacing: -.01em; }
+  .lead { margin: 0; color: var(--ink-2); }
+  .summary {
+    margin: 0 0 28px;
+    padding: 18px 20px;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 16px;
+  }
+  .summary h2 { margin: 0 0 8px; font-size: 15px; color: var(--sig-text); }
+  .summary ul { margin: 0; padding-left: 1.2em; }
+  .summary li + li { margin-top: 4px; }
+  nav {
+    margin: 0 0 36px;
+    padding: 16px 20px;
+    border: 1px solid var(--rule);
+    border-radius: 16px;
+  }
+  nav h2 { margin: 0 0 8px; font-size: 13px; letter-spacing: .08em; color: var(--ink-3); font-weight: 600; }
+  nav ol { margin: 0; padding-left: 1.4em; }
+  nav a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule-2); }
+  nav a:hover { color: var(--sig-text); border-color: var(--sig-text); }
+  section { padding-top: 8px; margin-bottom: 28px; scroll-margin-top: 16px; }
+  section h2 {
+    margin: 0 0 10px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    line-height: 1.4;
+    border-bottom: 1px solid var(--rule);
+  }
+  h3 { margin: 18px 0 6px; font-size: 16px; }
+  p { margin: 0 0 12px; }
+  ul.list { margin: 0 0 12px; padding-left: 1.2em; }
+  ul.list li + li { margin-top: 6px; }
+  .host { color: var(--ink-2); font-size: 14px; word-break: break-all; }
+  strong { font-weight: 600; }
+  a { color: var(--sig-text); }
+  footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+    font-size: 14px;
+    color: var(--ink-2);
+  }
+  @media (max-width: 480px) {
+    body { font-size: 15px; }
+    h1 { font-size: 26px; }
+    section h2 { font-size: 18px; }
+  }
+  @media print {
+    :root {
+      --bg: #fff; --surface: #fff; --surface-2: #fff;
+      --ink: #000; --ink-2: #333; --ink-3: #555;
+      --rule: #ccc; --rule-2: #999; --sig: #000; --sig-text: #000;
+    }
+    body { font-size: 11pt; }
+    .page { max-width: none; padding: 0; }
+    nav, .eyebrow::before { display: none; }
+    .summary { border-radius: 0; }
+    section { break-inside: avoid-page; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <span class="eyebrow">隐私政策</span>
+    <h1>隐私政策</h1>
+    <p class="lead">本应用是一款网络诊断与安全自查工具。我们没有自己的服务器，也没有账号体系。本政策说明应用会接触哪些数据、这些数据保存在哪里，以及为完成功能会访问哪些第三方公共服务。</p>
+  </header>
+
+  <aside class="summary" aria-label="摘要">
+    <h2>简要说明</h2>
+    <ul>
+      <li>你的检测记录、设备列表和偏好设置只保存在你的设备上，不会上传。</li>
+      <li>我们不共享个人信息，也不包含广告或统计 SDK。</li>
+      <li>部分功能需要直接访问公开的第三方服务，这些服务能看到你的公网 IP。</li>
+      <li>服务仅面向年满 18 周岁的用户。</li>
+    </ul>
+  </aside>
+
+  <nav aria-label="目录">
+    <h2>目录</h2>
+    <ol>
+      <li><a href="#local">仅保存在本机的数据</a></li>
+      <li><a href="#third-party">发送给第三方公共服务的数据</a></li>
+      <li><a href="#lan">局域网内的探测</a></li>
+      <li><a href="#permissions">系统权限</a></li>
+      <li><a href="#feedback">意见反馈</a></li>
+      <li><a href="#sharing">信息共享</a></li>
+      <li><a href="#rights">你的选择与控制</a></li>
+      <li><a href="#minors">未成年人</a></li>
+      <li><a href="#changes">政策变更</a></li>
+    </ol>
+  </nav>
+
+  <section id="local">
+    <h2>仅保存在本机的数据</h2>
+    <p>以下数据只保存在你的设备上，不会上传到任何服务器：</p>
+    <ul class="list">
+      <li>测速记录与历史结果；</li>
+      <li>局域网设备扫描结果，以及你为设备设置的名称和可信标记；</li>
+      <li>网络体检、端口检测、网站检测等结果；</li>
+      <li>应用内通知、外观及其他偏好设置；</li>
+      <li>你开启泄露监控的邮箱地址。</li>
+    </ul>
+    <p>你可以在应用的「我的 › 清除本地数据」中随时清除这些数据；删除应用后，这些数据也会一并被移除。</p>
+  </section>
+
+  <section id="third-party">
+    <h2>发送给第三方公共服务的数据</h2>
+    <p>为完成对应功能，应用会从你的设备直接访问下列公开服务。与访问任何网站一样，这些服务能够看到你的公网 IP 地址。</p>
+    <h3>网速测试</h3>
+    <p>访问 Cloudflare 测速服务及 LibreSpeed 社区测速节点，上传和下载的内容均为随机数据。<br><span class="host">speed.cloudflare.com、librespeed.org 及其列出的社区节点</span></p>
+    <h3>公网 IP 与归属地查询</h3>
+    <p>用于获取你的公网 IP 地址及其大致归属地。<br><span class="host">ipwho.is、ipinfo.io、api.ip.sb、api6.ipify.org</span></p>
+    <h3>多地网站检测</h3>
+    <p>从多个地区发起访问以检测网站可用性，相关服务会收到你输入的域名。<br><span class="host">api.globalping.io</span></p>
+    <h3>邮箱泄露查询</h3>
+    <p>用于查询邮箱是否出现在公开的数据泄露事件中，相关服务会收到你输入或开启监控的邮箱地址。<br><span class="host">api.xposedornot.com</span></p>
+    <h3>延迟测量与安全检测</h3>
+    <p>首页延迟测量和各项网络安全检测会访问公共 DNS 及常见公共站点，请求中不携带你的个人信息。<br><span class="host">223.5.5.5、captive.apple.com、apple.com、cloudflare.com、baidu.com 等</span></p>
+    <h3>版本检查</h3>
+    <p>「关于」页面会向 App Store 查询应用的最新版本号，请求中只包含应用的标识。<br><span class="host">itunes.apple.com</span></p>
+    <p>上述服务如何处理收到的请求，以其各自的隐私政策为准。</p>
+  </section>
+
+  <section id="lan">
+    <h2>局域网内的探测</h2>
+    <p>设备扫描、端口检测和 Wi-Fi 体检会向你当前所在局域网内的设备发送 ping、mDNS、SSDP、NetBIOS 和 TCP 连接请求，用于发现设备和识别开放端口。探测结果只保存在本机。</p>
+    <p>请仅在你拥有或已获授权的网络中使用这些功能。</p>
+  </section>
+
+  <section id="permissions">
+    <h2>系统权限</h2>
+    <ul class="list">
+      <li><strong>本地网络：</strong>扫描局域网设备和检测网关时需要。</li>
+      <li><strong>照片：</strong>仅在你为意见反馈添加截图时，读取你选中的图片。</li>
+    </ul>
+    <p>本应用不申请定位、通讯录、麦克风、相机或跨应用追踪权限。你可以随时在系统设置中关闭已授予的权限，关闭后相关功能将无法使用。</p>
+  </section>
+
+  <section id="feedback">
+    <h2>意见反馈</h2>
+    <p>反馈内容通过系统分享面板或邮件应用发送，发送给谁、以何种方式发送由你决定。若你勾选「附带诊断信息」，反馈中会附上应用版本、系统版本和当前连接方式。</p>
+  </section>
+
+  <section id="sharing">
+    <h2>信息共享</h2>
+    <p>我们不共享个人信息。除你主动使用上述功能时由应用直接向对应第三方公共服务发出的请求外，我们不会将你的数据提供给任何第三方。本应用不包含广告 SDK 或统计分析 SDK。</p>
+  </section>
+
+  <section id="rights">
+    <h2>你的选择与控制</h2>
+    <ul class="list">
+      <li>不使用某项功能，即不会产生该功能对应的第三方请求；</li>
+      <li>可随时清除本地数据或删除应用；</li>
+      <li>可随时在系统设置中撤回已授予的权限；</li>
+      <li>可随时关闭对某个邮箱的泄露监控。</li>
+    </ul>
+  </section>
+
+  <section id="minors">
+    <h2>未成年人</h2>
+    <p>本服务仅面向年满 18 周岁的用户。未满 18 周岁的个人不得下载、安装、访问或使用本服务。</p>
+  </section>
+
+  <section id="changes">
+    <h2>政策变更</h2>
+    <p>本政策可能随功能调整而更新，更新后的版本会随应用新版本一同发布。若变更涉及数据处理方式的实质性调整，我们会在应用内予以提示。</p>
+  </section>
+
+  <footer>
+    <p>另请参阅：<a href="terms.html">使用条款</a></p>
+  </footer>
+</main>
+</body>
+</html>
